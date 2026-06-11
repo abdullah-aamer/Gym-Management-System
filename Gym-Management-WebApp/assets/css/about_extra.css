@@ -1,0 +1,122 @@
+.about-section{
+    display:grid;
+    gap:24px;
+}
+
+.about-hero{
+    padding:34px;
+    border-radius:28px;
+    background:linear-gradient(135deg,rgba(15,23,42,.92),rgba(37,99,235,.75));
+    border:1px solid rgba(0,217,255,.30);
+    box-shadow:0 0 40px rgba(0,217,255,.20);
+}
+
+.about-hero h2{
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.about-hero h2 span{
+    color:#00d9ff;
+}
+
+.about-hero p{
+    color:#dbeafe;
+    line-height:1.8;
+    font-size:17px;
+}
+
+.about-card{
+    padding:28px;
+    border-radius:24px;
+    background:rgba(15,23,42,.82);
+    border:1px solid rgba(0,217,255,.18);
+    box-shadow:0 15px 42px rgba(0,0,0,.25);
+}
+
+.about-card h2{
+    color:#67e8f9;
+    margin-bottom:15px;
+    font-size:26px;
+}
+
+.about-card p{
+    color:#e5f7ff;
+    line-height:1.8;
+    margin-bottom:12px;
+    font-size:16px;
+}
+
+.feature-list{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.feature-list div{
+    padding:16px;
+    border-radius:16px;
+    background:rgba(0,217,255,.12);
+    border:1px solid rgba(0,217,255,.22);
+    color:#e5f7ff;
+    font-weight:700;
+    text-align:center;
+    line-height:1.5;
+}
+
+.about-table{
+    margin-bottom:0;
+}
+
+.info-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.info-grid div{
+    padding:18px;
+    border-radius:16px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(0,217,255,.18);
+}
+
+.info-grid strong{
+    display:block;
+    color:#67e8f9;
+    margin-bottom:8px;
+}
+
+.info-grid span{
+    color:#e5f7ff;
+}
+
+.tech-stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.tech-stack span{
+    padding:11px 16px;
+    border-radius:100px;
+    background:rgba(0,217,255,.14);
+    border:1px solid rgba(0,217,255,.30);
+    color:#67e8f9;
+    font-weight:800;
+}
+
+.contact-card strong{
+    color:#67e8f9;
+}
+
+@media(max-width:1000px){
+    .feature-list,
+    .info-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-hero h2{
+        font-size:30px;
+    }
+}

@@ -1,0 +1,39 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Segoe UI",Arial,sans-serif}
+html,body{min-height:100%;overflow-x:hidden}
+body{background:#050b16;color:#fff}
+a{text-decoration:none}
+.layout{display:flex;min-height:100vh}
+.sidebar{width:300px;height:100vh;position:fixed;top:0;left:0;bottom:0;padding:25px 22px;background:linear-gradient(rgba(5,11,22,.94),rgba(5,11,22,.97)),url("../images/gym-bg.jpg");background-size:cover;background-position:center;border-right:1px solid rgba(0,217,255,.25);box-shadow:0 0 35px rgba(0,217,255,.13);overflow-y:auto;z-index:1000}
+.brand{display:flex;align-items:center;gap:15px;padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid rgba(0,217,255,.18)}
+.side-logo{width:68px;height:68px;object-fit:contain;filter:drop-shadow(0 0 14px cyan)}
+.brand h2{font-size:28px;color:#fff}
+.brand p{margin-top:6px;color:#38bdf8;font-size:14px;font-weight:600}
+.side-nav{display:grid;gap:8px}
+.side-nav a{display:block;padding:13px 15px;border-radius:14px;color:#dbeafe;font-size:16px;font-weight:700;transition:.25s}
+.side-nav a:hover{color:#00d9ff;background:rgba(0,217,255,.13);box-shadow:0 0 20px rgba(0,217,255,.20);transform:translateX(4px)}
+.side-nav .logout{margin-top:15px;color:#fecaca}
+.main{margin-left:300px;width:calc(100% - 300px);min-height:100vh;padding:28px;background:linear-gradient(rgba(7,17,31,.88),rgba(7,17,31,.94)),url("../images/gym-bg.jpg");background-size:cover;background-position:center;background-attachment:fixed}
+.topbar{padding:24px 28px;margin-bottom:25px;border-radius:24px;background:rgba(15,23,42,.72);border:1px solid rgba(0,217,255,.20);backdrop-filter:blur(16px);box-shadow:0 14px 45px rgba(0,0,0,.25)}
+.topbar h1{font-size:32px;color:white}.topbar p{margin-top:7px;color:#93c5fd;font-size:16px}
+.dashboard-hero{padding:34px;border-radius:28px;margin-bottom:28px;background:linear-gradient(135deg,rgba(15,23,42,.92),rgba(37,99,235,.75));border:1px solid rgba(0,217,255,.30);box-shadow:0 0 40px rgba(0,217,255,.20)}
+.small-label{color:#67e8f9;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+.dashboard-hero h2{font-size:38px;margin-bottom:12px}.dashboard-hero h2 span{color:#00d9ff}.dashboard-hero p{max-width:1100px;color:#dbeafe;font-size:17px;line-height:1.8}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.stat-card{display:flex;align-items:center;gap:18px;padding:25px;border-radius:24px;background:rgba(15,23,42,.78);border:1px solid rgba(0,217,255,.18);backdrop-filter:blur(14px);box-shadow:0 15px 42px rgba(0,0,0,.25);transition:.25s}
+.stat-card:hover{transform:translateY(-6px);box-shadow:0 0 30px rgba(0,217,255,.25)}
+.stat-icon{width:62px;height:62px;border-radius:18px;display:grid;place-items:center;font-size:30px;background:linear-gradient(135deg,#2563eb,#06b6d4);box-shadow:0 0 20px rgba(0,217,255,.35)}
+.stat-card p{color:#93c5fd;font-weight:700;margin-bottom:8px}.stat-card h3{color:white;font-size:30px}
+.section-title{margin:35px 0 17px;font-size:28px;color:white}
+.table-wrap{overflow-x:auto;border-radius:24px;background:rgba(15,23,42,.82);border:1px solid rgba(0,217,255,.18);box-shadow:0 15px 42px rgba(0,0,0,.25);margin-bottom:24px}
+table{width:100%;border-collapse:collapse;min-width:850px}th,td{padding:15px 17px;text-align:left;border-bottom:1px solid rgba(255,255,255,.08);font-size:15px}
+th{background:rgba(0,217,255,.11);color:#67e8f9;font-weight:800}td{color:#e5f7ff}
+.badge{display:inline-block;padding:6px 12px;border-radius:100px;background:rgba(0,217,255,.15);border:1px solid rgba(0,217,255,.30);color:#67e8f9;font-size:12px;font-weight:800}
+.action-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.action-card{padding:26px;border-radius:24px;background:rgba(15,23,42,.78);border:1px solid rgba(0,217,255,.18);backdrop-filter:blur(14px);color:white;box-shadow:0 15px 42px rgba(0,0,0,.25);transition:.25s}
+.action-card:hover{transform:translateY(-7px);box-shadow:0 0 30px rgba(0,217,255,.28)}
+.action-card h3{color:#67e8f9;font-size:22px;margin-bottom:8px}.action-card p{color:#cbd5e1;line-height:1.6}
+.user-panel{margin-top:25px;padding:28px;border-radius:24px;background:rgba(15,23,42,.78);border:1px solid rgba(0,217,255,.18)}
+.input,select,textarea{width:100%;padding:13px 14px;border:1px solid rgba(0,217,255,.25);border-radius:13px;margin:8px 0 16px;outline:none;background:#0f172a;color:white;font-size:14px}
+textarea{min-height:90px}.btn{display:inline-block;border:none;border-radius:13px;padding:12px 17px;cursor:pointer;background:linear-gradient(135deg,#2563eb,#06b6d4);color:white;font-weight:800;box-shadow:0 0 16px rgba(0,217,255,.35);transition:.25s}
+.btn-light{background:#1e293b;color:white}.btn-danger{background:#dc2626;box-shadow:none}
+@media(max-width:1100px){.sidebar{position:relative;width:100%;height:auto}.layout{display:block}.main{margin-left:0;width:100%}.stats-grid,.action-grid{grid-template-columns:1fr}}
